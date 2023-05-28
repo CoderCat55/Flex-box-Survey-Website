@@ -1,1 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Box Survey Website</title>
+    <style>
+    body{
+        display: flex;
+        align-content: baseline;
+        flex-wrap:nowrap; /* you can make title up by saying wrap*/
+        justify-content: flex-start;
 
+    }
+    .divs{
+        background-color: azure;
+        border-color: cadetblue;
+        border-style: dotted;
+        border-width: 5px;
+        min-width: fit-content;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    </style>
+</head>
+<body>
+    <h1>Cat Survey</h1>
+
+    <form action="mailto:codercat55@hotmail.com" method="post" enctype="text/plain">
+    <div class="divs">
+            <label for="1">First name:</label><br>
+            <input type="text" id="1" name="fname"><br>
+            <label for="2">Last name:</label><br>
+            <input type="text" id="2" name="lname">
+    
+    </div>
+
+    <div class="divs">
+            <label for="3">Select your favorite color:</label> <br>
+            <input type="color" id="3" name="favcolor">
+    
+    </div>
+
+
+    <div class="divs">
+            <label for="4">What is your favorite cat breed?</label> <br>
+            <input type="text" id="4" name="favcatbreed">
+    
+    </div>
+
+
+    <div class="divs">
+            <label for="6">How many cat/cats you have?</label> <br>
+            <input type="number" id="6" name="catnumber">
+    
+    </div>
+
+
+    <div class="divs">
+            <label for="7">What is your cat/cats name?</label> <br>
+            <input type="text" id="7" name="catname">
+    
+    </div>
+
+
+    <div class="divs">
+            <label>Which gender your cat/cats ?</label> <br>
+            <input type="radio" id="8" name="favcatbreed">
+            <label for="8">Female</label> <br>
+            <input type="radio" id="9" name="favcatbreed">
+            <label for="9">Male</label> <br>
+            <input type="radio" id="10" name="favcatbreed">
+            <label for="10"> I have both.</label>
+    
+    </div>
+
+
+    <div class="divs">
+           <label for="11">Upload you cats photo:</label> <br>
+           <input type="file" id="11" name="catphoto">
+
+    </div>
+    
+    <div class="divs">
+
+            <input type="checkbox" id="12" required>
+            <label for="12"> I agree <a href=" ">Terms of conditions</a> </label><br>
+
+            <input type="checkbox" id="13" required>
+            <label for="13"> I agree everything here is true.</label> <br>
+
+            <input type="submit" value="Submit">
+    </div>
+
+  </form>
+
+
+</body>
+</html>
